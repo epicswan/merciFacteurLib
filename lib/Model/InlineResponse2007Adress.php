@@ -58,7 +58,7 @@ class InlineResponse2007Adress implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'address' => '\MerciFacteurApi\Client\Model\InlineResponse2007Adress'
+        '_0' => '\MerciFacteurApi\Client\Model\InlineResponse2007Adress0'
     ];
 
     /**
@@ -67,7 +67,7 @@ class InlineResponse2007Adress implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'address' => '\MerciFacteurApi\Client\Model\InlineResponse2007Adress'
+        '_0' => null
     ];
 
     /**
@@ -97,7 +97,7 @@ class InlineResponse2007Adress implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'address' => 'address'
+        '_0' => '0'
     ];
 
     /**
@@ -106,7 +106,7 @@ class InlineResponse2007Adress implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'address' => 'setAddress'
+        '_0' => 'set0'
     ];
 
     /**
@@ -115,7 +115,7 @@ class InlineResponse2007Adress implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'address' => 'getAddress'
+        '_0' => 'get0'
     ];
 
     /**
@@ -166,9 +166,7 @@ class InlineResponse2007Adress implements ModelInterface, ArrayAccess
      *
      * @var mixed[]
      */
-    protected $container = [
-        'address' => null
-    ];
+    protected $container = [];
 
     /**
      * Constructor
@@ -178,7 +176,7 @@ class InlineResponse2007Adress implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['address'] = isset($data['address']) ? $data['address'] : null;
+        $this->container['_0'] = isset($data['_0']) ? $data['_0'] : null;
     }
 
     /**
@@ -208,23 +206,23 @@ class InlineResponse2007Adress implements ModelInterface, ArrayAccess
     /**
      * Gets _0
      *
-     * @return \MerciFacteurApi\Client\Model\InlineResponse2007Adress
+     * @return \MerciFacteurApi\Client\Model\InlineResponse2007Adress0
      */
-    public function getAddress()
+    public function get0()
     {
-        return $this->container['address'];
+        return $this->container['_0'];
     }
 
     /**
      * Sets _0
      *
-     * @param \MerciFacteurApi\Client\Model\InlineResponse2007Adress $_0 _0
+     * @param \MerciFacteurApi\Client\Model\InlineResponse2007Adress0 $_0 _0
      *
      * @return $this
      */
-    public function setAddress($address)
+    public function set0($_0)
     {
-        $this->container['address'] = $address;
+        $this->container['_0'] = $_0;
 
         return $this;
     }
