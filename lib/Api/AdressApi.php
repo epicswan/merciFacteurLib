@@ -464,7 +464,7 @@ class AdressApi
             }
 
             return [
-                ObjectSerializer::deserialize($content, $returnType, []),
+                json_decode($content, true),
                 $response->getStatusCode(),
                 $response->getHeaders()
             ];
