@@ -88,7 +88,6 @@ export class UserApi {
     let contentTypes = [];
     let accepts = ["application/json"];
     let returnType = InlineResponse2002;
-    console.log("je suis la!");
     return this.apiClient.callApi(
       "/deleteUser",
       "DELETE",
@@ -199,7 +198,6 @@ export class UserApi {
     wwAccessToken,
     callback
   ) {
-    console.log("helo");
     let postBody = null;
     // verify the required parameter 'emailUser' is set
     if (emailUser === undefined || emailUser === null) {
@@ -249,8 +247,6 @@ export class UserApi {
     let accepts = ["application/json"];
     let returnType = InlineResponse2001;
 
-    console.log(formParams);
-    console.log(this.apiClient.callApi);
     return this.apiClient.callApi(
       "/setUser",
       "POST",
