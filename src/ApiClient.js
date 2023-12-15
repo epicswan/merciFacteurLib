@@ -274,6 +274,9 @@ export class ApiClient {
     if (param == null) {
       return null;
     }
+    if (!Array.isArray(param)) {
+      param = [param];
+    }
     switch (collectionFormat) {
       case "csv":
         return param.map(this.paramToString).join(",");
